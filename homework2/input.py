@@ -1,0 +1,6 @@
+name = input("შეიყვანე სახელი: ")
+Last_name = input("შეიყვანე გვარი: ")
+age = input("შეიყვანე ასაკი: ")
+print(name)
+print(Last_name)
+print(age)
