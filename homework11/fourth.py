@@ -1,3 +1,6 @@
-for num in range(-100, 101):
-    if num > 0:
-        print(num)
+number1 = int(input("შეიტანეთ პირველი რიცხვი: "))
+number2 = int(input("შეიტანეთ მეორე რიცხვი: "))
+if number1 == number2:
+    print("ორივე რიცხვი ტოლია.")
+else:
+    print("ორივე რიცხვი არ არის ტოლი.")

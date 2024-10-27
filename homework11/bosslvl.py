@@ -1,11 +1,10 @@
-rows = 10  
+def boss_level(n):
+    for i in range(n):
+        
+        spaces = ' ' * (n - i - 1)
+        
+        stars = '*' * (2 * i + 1)
+        
+        print(spaces + stars)
 
-for i in range(1, rows + 1):
-    
-    print('*' * i, end='')
-    
-   
-    print(' ' * (2 * (rows - i)), end='')
-    
-   
-    print('*' * i)
+boss_level(5)
