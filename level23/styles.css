@@ -1,0 +1,33 @@
+/* Table styling */
+table {
+    /* No width or margin applied */
+}
+
+/* Table header styling */
+th {
+    color: black;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Table row styling */
+tr:nth-child(even) {
+    background-color: transparent;
+}
+
+tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+/* Table data cell styling */
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Table hover effect */
+tr:hover {
+    background-color: transparent;
+}
