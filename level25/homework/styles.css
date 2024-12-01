@@ -1,0 +1,17 @@
+.btn {
+    width: 100px;
+    height: 30px;
+    color: burlywood;
+    background-color:aliceblue;
+    border-radius: 5px;
+    border:saddlebrown;
+    cursor: pointer;
+}
+
+.header,
+main p {
+    background-color:antiquewhite;
+    color: blueviolet;
+}
+footer{background-color:blanchedalmond;
+}
