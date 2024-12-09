@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(255, 87, 34);
+}
+
+#paragraphgroup47 {
+    background-color: #3432a8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.styledtext {
+    font-size: 24px;
+    color: hsl(0, 100%, 100%);
+    opacity: 0.5;
+    text-transform: uppercase;
+}

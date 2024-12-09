@@ -1,0 +1,15 @@
+.bruce-lee h1 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: bold;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+  
+  .bruce-lee p {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
