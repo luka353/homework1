@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/3dunicode/3d_unicode.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
