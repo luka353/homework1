@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+#pizza {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1200px-Pizza-3007395.jpg'); 
+}
+
+#lions {
+    background-image: url('https://cdn.britannica.com/30/150930-120-D3D93F1E/lion-Namibia.jpg'); 
+}
+
+#Woodpecker {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Greater_Spotted_Woodpecker_%2841554059345%29.jpg/270px-Greater_Spotted_Woodpecker_%2841554059345%29.jpg'); 
+}
+
+#Mercedes {
+    background-image: url('https://bluesky-cogcms-prodb.cdn.imgeng.in/media/23kcymvw/mercedes-amg-gt-c192-stage-3840x3840-07-2023.jpg?width=1200&height=800&mode=crop&scale=both'); 
+}
+
+#georgian-national {
+    background-image: url('https://www.marryingeorgia.com/wp-content/uploads/2023/04/georgian-dances.webp');
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
