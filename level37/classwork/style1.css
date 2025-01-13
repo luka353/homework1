@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: 
+      linear-gradient(210deg, rgba(29, 177, 160, 0.5), rgba(15, 137, 212, 0.2) 40%),
+      linear-gradient(40deg, rgba(41, 76, 110, .9), rgba(209, 82, 255, .8) 63% 0%),
+      linear-gradient(90deg, #ff6347, #ff7e5f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .content {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
