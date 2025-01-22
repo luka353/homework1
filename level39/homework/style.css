@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #2c3e50;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.animal-list li {
+    color: #e74c3c;
+}
+
+.bird-list li {
+    color: #3498db;
+}
+
+.reptile-list li {
+    color: #2ecc71;
+}
+
+.plant-list li {
+    color: #9b59b6;
+}
+
+.bacteria-list li {
+    color: #f39c12;
+}
