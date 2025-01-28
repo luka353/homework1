@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.card ul .inactive {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card button {
+    background-color: white;
+    color: #2575fc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
