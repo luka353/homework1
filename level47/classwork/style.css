@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    gap: 120px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.box {
+    width: 120px;
+    height: 70px;
+    border: 3px solid #00AEEF;
+    background-color: transparent;
+}
