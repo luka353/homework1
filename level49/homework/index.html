@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Ticket Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff4b5c;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .ticket {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+    
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="text" id="github" placeholder="GitHub Username">
+    <button onclick="generateTicket()">Generate My Ticket</button>
+    
+    <div class="ticket" id="ticket">
+      <h3>Congrats, <span id="ticketName"></span>!</h3>
+      <p>Your ticket is ready.</p>
+      <p>We've emailed your ticket to <span id="ticketEmail"></span></p>
+      <h4>Coding Conf</h4>
+      <p>Jan 31, 2025 / Austin, TX</p>
+    </div>
+  </div>
+  
+  <script>
+    function generateTicket() {
+      let name = document.getElementById('name').value;
+      let email = document.getElementById('email').value;
+      if (name && email) {
+        document.getElementById('ticketName').innerText = name;
+        document.getElementById('ticketEmail').innerText = email;
+        document.getElementById('ticket').style.display = 'block';
+      } else {
+        alert('Please fill in all fields');
+      }
+    }
+  </script>
+</body>
+</html>
