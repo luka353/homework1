@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #d6e2f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.article-image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    width: 60%;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f3251;
+}
+
+p {
+    font-size: 14px;
+    color: #7d889e;
+    margin: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.share {
+    position: relative;
+}
+
+.share-btn {
+    background: #6d7f97;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.share-popup {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: -10px;
+    background: #1f3251;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.share-popup img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.share:hover .share-popup {
+    display: flex;
+}
