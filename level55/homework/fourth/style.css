@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .card {
+    flex: 1;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card img {
+    width: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+  
+  .card button {
+    background-color: white;
+    color: inherit;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .sedans {
+    background-color: #E28525;
+  }
+  
+  .suvs {
+    background-color: #016972;
+  }
+  
+  .luxury {
+    background-color: #00403F;
+  }
+  

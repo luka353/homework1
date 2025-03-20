@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Karla', sans-serif;
+    background-color: #e6f3f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 700px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+  }
+  
+  .card-header h2 {
+    color: #2ab2af;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .card-header .guarantee {
+    color: #c0df34;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .card-header .description {
+    color: #9aa7be;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .card-body {
+    display: flex;
+    background-color: #2ab2af;
+    color: white;
+  }
+  
+  .subscription, .why-us {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .subscription h3, .why-us h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .price .dollar {
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .price .per-month {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  .subscription .access {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .subscription button {
+    background-color: #c0df34;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscription button:hover {
+    background-color: #a8c92b;
+  }
+  
+  .why-us {
+    background-color: #23a29b;
+  }
+  
+  .why-us ul {
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.9;
+  }
+  
