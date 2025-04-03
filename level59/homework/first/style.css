@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #0d1323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: #5747ea;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.time-options {
+    margin-top: 20px;
+}
+
+.time-options p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.time-options .active {
+    color: white;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #1c204b;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    width: 160px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.top-section {
+    height: 40px;
+    width: 100%;
+}
+
+.work .top-section {
+    background-color: #ff8b64;
+}
+
+.play .top-section {
+    background-color: #56c2e6;
+}
+
+.study .top-section {
+    background-color: #ff5c7c;
+}
+
+.exercise .top-section {
+    background-color: #4acf81;
+}
+
+.social .top-section {
+    background-color: #7536d3;
+}
+
+.self-care .top-section {
+    background-color: #f1c75b;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content h2 {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.content p {
+    font-size: 12px;
+    opacity: 0.5;
+}

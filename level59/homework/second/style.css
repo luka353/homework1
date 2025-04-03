@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    background-color: #ecf1fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.result-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.left-panel {
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 100%);
+    color: white;
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.left-panel h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.score-circle {
+    background: linear-gradient(180deg, #4E21CA 0%, #2421CA 100%);
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.out-of {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.left-panel h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.left-panel p {
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+}
+
+.right-panel h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #303b5a;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.summary-item span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reaction {
+    background-color: #fff6f5;
+    color: #ff5757;
+}
+
+.memory {
+    background-color: #fffbf2;
+    color: #ffd057;
+}
+
+.verbal {
+    background-color: #f2fbfa;
+    color: #00bd91;
+}
+
+.visual {
+    background-color: #f3f3fd;
+    color: #1125d6;
+}
+
+.continue-btn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #303b5a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+    background-color: #1f2b45;
+}

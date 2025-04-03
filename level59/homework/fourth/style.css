@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    background: url('your-image-path.jpg') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: -50px auto 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.back-btn {
+    background: #3cb4ac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.bookmark-btn {
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stat {
+    text-align: center;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+.about {
+    margin: 20px 0;
+}
+
+.rewards {
+    margin: 20px 0;
+}
+
+.reward {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reward h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.reward p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.reward span {
+    font-weight: bold;
+}
+
+.reward button {
+    background: #3cb4ac;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.out-of-stock {
+    opacity: 0.6;
+}
+
+.out-of-stock button {
+    background: #ccc;
+}
