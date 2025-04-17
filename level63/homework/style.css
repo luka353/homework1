@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .card {
+    width: 150px;
+    height: 100px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .card1 {
+    animation: rotateCard 2s infinite linear;
+  }
+  
+  .card2 {
+    animation: scaleCard 2s infinite alternate;
+  }
+  
+  .card3 {
+    animation: fadeCard 3s infinite alternate;
+  }
+  
+  @keyframes rotateCard {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes scaleCard {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+  }
+  
+  @keyframes fadeCard {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+  }
+  
+  .color-size {
+    animation: colorSizeChange 3s infinite alternate;
+  }
+  
+  @keyframes colorSizeChange {
+    0% { background: lightblue; transform: scale(1); }
+    100% { background: coral; transform: scale(1.5); }
+  }
+  
+  .animated-text {
+    font-size: 24px;
+    animation: textColorChange 2s infinite alternate;
+  }
+  
+  @keyframes textColorChange {
+    from { color: black; }
+    to { color: crimson; }
+  }
+  
+  .box {
+    width: 100px;
+    height: 50px;
+    background: teal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .bounce {
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .slide {
+    animation: slide 2s infinite alternate;
+  }
+  
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(100px); }
+  }
+  
+  .custom-box {
+    width: 120px;
+    height: 60px;
+    background: purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateScale 4s infinite alternate;
+    border-radius: 10px;
+  }
+  
+  @keyframes rotateScale {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.3); }
+  }  
