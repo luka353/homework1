@@ -1,0 +1,1 @@
+length = lambda s: len(s)
