@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Tasks</title>
+  <style>
+    /* 1. Flexbox – კარტების ცენტრში განლაგება */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    .card {
+      width: 150px;
+      height: 200px;
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    /* 2. Grid – card Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .grid-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .grid-card .info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* 3. Responsive – მობილურისთვის ადაპტირებული გვერდი */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 4. Position – ფიქსირებული ელემენტი */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* 5. Position – სტატიკური და აბსოლუტური განლაგება */
+    .position-container {
+      position: relative;
+      height: 300px;
+      background: #f0f0f0;
+      margin-top: 50px;
+    }
+
+    .centered-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .centered-content img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Flexbox -->
+  <div class="flex-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    <div class="card">Card 6</div>
+  </div>
+
+  <!-- 2. Grid Layout -->
+  <div class="grid-container">
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200" alt="Image 1" />
+      <div class="info">Info about image 1</div>
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x200" alt="Image 2" />
+      <div class="info">Info about image 2</div>
+    </div>
+  </div>
+
+  <!-- 4. Fixed "Back to Top" button -->
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Top</button>
+
+  <!-- 5. Absolute Centering -->
+  <div class="position-container">
+    <div class="centered-content">
+      <img src="https://via.placeholder.com/100" alt="Centered" />
+      <p>Centered Text</p>
+    </div>
+  </div>
+
+</body>
+</html>
