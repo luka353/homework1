@@ -1,0 +1,26 @@
+.content {
+    font-size: 60px;
+    font-family: serif;
+    position: relative;
+  }
+  
+  .content::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .content::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+  }  
