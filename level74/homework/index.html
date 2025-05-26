@@ -1,0 +1,43 @@
+// 1️⃣
+let sum = 0;
+for (let i = 1; i <= 100; i++) {
+  sum += i;
+}
+console.log(sum);
+
+// 2️⃣
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " ლუწია");
+  } else {
+    console.log(i + " კენტია");
+  }
+}
+
+// 3️⃣
+let number = parseInt(prompt("შეიყვანე რიცხვი:"));
+for (let i = 1; i <= 10; i++) {
+  console.log(`${number} x ${i} = ${number * i}`);
+}
+
+// 4️⃣
+for (let c = 0; c <= 100; c++) {
+  let f = (c * 9) / 5 + 32;
+  if (c < 10) {
+    console.log(`${c}°C = ${f}°F - ცივია`);
+  } else if (c <= 30) {
+    console.log(`${c}°C = ${f}°F - თბილია`);
+  } else {
+    console.log(`${c}°C = ${f}°F - ცხელია`);
+  }
+}
+
+// 5️⃣
+let text = "JavaScript is awesome!";
+if (text === "") {
+  console.log("მგონია, რომ ცარიელია");
+} else if (text.includes("a")) {
+  console.log("მსგავსი სიმბოლოა ნაპოვნი");
+} else {
+  console.log("სტანდარტული ტექსტი");
+}

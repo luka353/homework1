@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>what</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+      margin: 10px;
+      display: inline-block;
+    }
+    .blue {
+      background-color: blue !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
+  <br><br>
+  <button id="colorButton">click for magic</button>
+
+  <script>
+    const boxes = document.querySelectorAll('.box');
+    for (let i = 0; i < boxes.length; i++) {
+      console.log(boxes[i]);
+    }
+    document.getElementById('colorButton').addEventListener('click', function() {
+      for (let i = 0; i < boxes.length; i++) {
+        boxes[i].classList.add('blue');
+      }
+    });
+  </script>
+
+</body>
+</html>

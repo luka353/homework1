@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>document</title>
-  <head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
 <body>
-<script>
-    console.log ("hello world")
-</script>
+
+<video autoplay muted loop playsinline>
+  <source src="assets/videoplayback.webm" type="video/mp4">
+</video>
+<link rel="stylesheet" href="assets/KungFuPandaRegular-xYjV.ttf">
+
 
 </body>
-<html
+</html>
