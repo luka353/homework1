@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>დავალება 2</title>
+</head>
+<body>
+  <script>
+    const points = [10, 30, 5, 2, 99];
+
+    points.push(50);
+    points.pop();    
+    points.shift();  
+    points.unshift(100); 
+    console.log("join:", points.join(" - "));
+    console.log("toString:", points.toString());
+
+    const otherPoints = [1, 2];
+    const combined = points.concat(otherPoints);
+    console.log("concat:", combined);
+  </script>
+</body>
+</html>
