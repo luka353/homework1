@@ -1,0 +1,17 @@
+<div id="hover1" style="width:100px; height:100px; background:purple; display:inline-block; margin:10px;"></div>
+<div id="hover2" style="width:100px; height:100px; background:yellow; display:inline-block; margin:10px;"></div>
+
+<script>
+hover1.onmouseover = () => hover1.style.opacity = "0.5";
+hover1.onmouseout = () => hover1.style.opacity = "1";
+
+hover2.onmouseover = () => hover2.style.borderRadius = "50%";
+hover2.onmouseout = () => hover2.style.borderRadius = "0";
+</script>
+
+<button id="pressBtn" style="margin-top:10px;">Press Me</button>
+
+<script>
+pressBtn.onmousedown = () => pressBtn.style.background = "gray";
+pressBtn.onmouseup = () => pressBtn.style.background = "";
+</script>

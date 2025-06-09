@@ -1,0 +1,10 @@
+<button id="colorBtn">Change Color</button>
+<button id="removeBtn">Remove Listener</button>
+
+<script>
+const colorChange = () => document.body.style.backgroundColor = "pink";
+colorBtn.addEventListener("click", colorChange);
+removeBtn.addEventListener("click", () => {
+  colorBtn.removeEventListener("click", colorChange);
+});
+</script>

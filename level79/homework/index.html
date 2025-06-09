@@ -1,0 +1,15 @@
+<button id="btn1">Click Me</button>
+
+<script>
+document.getElementById("btn1").addEventListener("click", () => {
+  document.body.style.backgroundColor = "lightblue";
+});
+
+const changeToGreen = () => document.body.style.backgroundColor = "lightgreen";
+document.getElementById("btn1").addEventListener("click", changeToGreen);
+
+const changeColor = () => {
+  document.body.style.backgroundColor = "lightcoral";
+};
+document.getElementById("btn1").addEventListener("click", changeColor);
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>arroew functiods</title>
+</head>
+<body>
+
+  <button id="btn1">buttoni 1 </button>
+  <button id="btn2">buttoni 2</button>
+  <button id="btn3">buttoni 3</button>
+
+  <script>
+    // 1
+    document.getElementById("btn1").addEventListener("click", () => {
+      document.body.style.backgroundColor = "lightblue";
+    });
+
+    // 2
+    const changeBg = () => {
+      document.body.style.backgroundColor = "lightgreen";
+    };
+    document.getElementById("btn2").addEventListener("click", changeBg);
+
+    // 3
+    document.getElementById("btn3").addEventListener("click", () => {
+      document.body.style.backgroundColor =
+        document.body.style.backgroundColor === "pink" ? "white" : "pink";
+    });
+  </script>
+
+</body>
+</html>

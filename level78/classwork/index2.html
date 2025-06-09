@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 100px);
+      gap: 10px;
+      background-color: #1c1c4a;
+      padding: 10px;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .item {
+      background-color: lightgreen;
+    }
+
+    .item.green { background-color: #4CAF50; }
+    .item.red { background-color: #f44336; }
+    .item.orange { background-color: #ff9800; }
+
+    .item1 {
+      grid-row: span 3;
+    }
+
+    .item2 {
+      grid-column: span 2;
+    }
+
+    .item9 {
+      grid-column: 4;
+      grid-row: 3;
+    }
+
+    body {
+      background-color: #1c1c4a;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>grifd</h1>
+  <div class="grid-container">
+    <div class="item green item1"></div>
+    <div class="item green item2"></div>
+    <div class="item red"></div>
+    <div class="item orange"></div>
+    <div class="item red"></div>
+    <div class="item green"></div>
+    <div class="item red"></div>
+    <div class="item orange"></div>
+    <div class="item green item9"></div>
+  </div>
+</body>
+</html>
