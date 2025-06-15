@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Level 81</title>
+  <style>
+    .odd { color: crimson; }
+    .even { color: darkblue; }
+    .cloned { color: green; font-size: 18px; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!-- დავალება 1 -->
+  <h2>დავალება 1</h2>
+  <ul id="list1"></ul>
+
+  <!-- დავალება 2 -->
+  <h2>დავალება 2</h2>
+  <div id="styledDiv"></div>
+
+  <!-- დავალება 3 -->
+  <h2>დავალება 3</h2>
+  <div id="removableDiv">
+    <p>პარაგრაფი 1</p>
+    <p>პარაგრაფი 2</p>
+    <p>პარაგრაფი 3</p>
+  </div>
+  <button onclick="removeFirst()">პირველი ელემენტის წაშლა</button>
+
+  <!-- დავალება 4 -->
+  <h2>დავალება 4</h2>
+  <ul id="list2"></ul>
+
+  <!-- დავალება 5 -->
+  <h2>დავალება 5</h2>
+  <p id="originalP">ეს არის ორიგინალი პარაგრაფი</p>
+
+  <script>
+    // დავალება 1
+    const list1 = document.getElementById("list1");
+    const itemCount = 15;
+    for (let i = 0; i < itemCount; i++) {
+      const li = document.createElement("li");
+      li.textContent = `Item ${i}`;
+      list1.appendChild(li);
+    }
+
+    // დავალება 2
+    const styledDiv = document.getElementById("styledDiv");
+    const textStyles = [
+      "color: red; font-size: 14px;",
+      "color: blue; font-size: 16px;",
+      "color: green; font-size: 18px;",
+      "color: orange; font-size: 20px;",
+      "color: purple; font-size: 22px;"
+    ];
+    for (let i = 0; i < 5; i++) {
+      const p = document.createElement("p");
+      p.setAttribute("style", textStyles[i]);
+      p.textContent = `ტექსტი ნომერი ${i + 1}`;
+      styledDiv.appendChild(p);
+    }
+
+    // დავალება 3
+    function removeFirst() {
+      const div = document.getElementById("removableDiv");
+      if (div.firstElementChild) {
+        div.removeChild(div.firstElementChild);
+        alert("Child removed!");
+      }
+    }
+
+    // დავალება 4
+    const list2 = document.getElementById("list2");
+    for (let i = 1; i <= 5; i++) {
+      const li = document.createElement("li");
+      li.textContent = `I am list item ${i}`;
+      li.className = (i % 2 === 0) ? "even" : "odd";
+      list2.appendChild(li);
+    }
+
+    // დავალება 5
+    const original = document.getElementById("originalP");
+    const clone = original.cloneNode(true);
+    clone.classList.add("cloned");
+    original.after(clone);
+  </script>
+</body>
+</html>
