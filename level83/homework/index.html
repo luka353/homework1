@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-6">
+  <div class="max-w-xl mx-auto bg-white rounded-xl shadow-md p-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">To-Do List</h2>
+    
+    <div class="flex gap-2 mb-4">
+      <input id="todo-input" type="text" placeholder="ახალი დავალება" class="flex-grow px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <button onclick="addTodo()" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">დამატება</button>
+    </div>
+
+    <ul id="todo-list" class="space-y-2"></ul>
+  </div>
+
+  <script>
+    function addTodo() {
+      const input = document.getElementById("todo-input");
+      const value = input.value.trim();
+      if (value === "") return;
+
+      const li = document.createElement("li");
+      li.className = "flex items-center justify-between bg-gray-100 px-4 py-2 rounded-md";
+
+      const text = document.createElement("span");
+      text.textContent = value;
+      text.className = "flex-1 cursor-pointer";
+      
+      // შესრულებულად მონიშვნა
+      text.onclick = () => {
+        text.classList.toggle("line-through");
+        text.classList.toggle("text-gray-500");
+      };
+
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "წაშლა";
+      deleteBtn.className = "ml-4 text-red-500 hover:text-red-700 font-semibold";
+      deleteBtn.onclick = () => li.remove();
+
+      li.appendChild(text);
+      li.appendChild(deleteBtn);
+
+      document.getElementById("todo-list").appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
