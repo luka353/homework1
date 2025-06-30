@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>დრო</title>
+</head>
+<body>
+  <h2>Დროის ინფორმაცია:</h2>
+  <p id="datetime"></p>
+
+  <script>
+    const now = new Date();
+
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1; 
+    const date = now.getDate();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    document.getElementById("datetime").innerText =
+      `წელი: ${year}, თვე: ${month}, რიცხვი: ${date}, საათი: ${hours}:${minutes}`;
+  </script>
+</body>
+</html>

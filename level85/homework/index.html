@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .section { margin-bottom: 30px; }
+    h2 { color: #336699; }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>1. String Literal და ცვლადი</h2>
+    <p id="greeting-output"></p>
+  </div>
+
+
+  <div class="section">
+    <h2>2. საყვარელი თვე</h2>
+    <input type="text" id="monthInput" placeholder="შეიყვანე თვე (მაგ: იანვარი)">
+    <button onclick="checkSeason()">შეამოწმე სეზონი</button>
+    <p id="season-output"></p>
+  </div>
+
+
+  <div class="section">
+    <h2>3. ასაკის შემოწმება (Ternary)</h2>
+    <input type="number" id="ageInput" placeholder="შეიყვანე ასაკი">
+    <button onclick="checkAge()">შეამოწმე</button>
+    <p id="age-output"></p>
+  </div>
+
+
+  <div class="section">
+    <h2>4. მიმდინარე თარიღი</h2>
+    <p id="date-output"></p>
+  </div>
+
+  <div class="section">
+    <h2>5. Countdown-ები</h2>
+    <p>ახალ წლამდე: <span id="newyear"></span></p>
+    <p>გიოგობამდე: <span id="giorgoba"></span></p>
+    <p>ბარბარობამდე: <span id="barbaroba"></span></p>
+  </div>
+
+  <script>
+    let greeting = "Hello World!";
+    let newGreeting = `${greeting}`;
+    document.getElementById("greeting-output").innerText = newGreeting;
+    function checkSeason() {
+      let month = document.getElementById("monthInput").value.trim().toLowerCase();
+      let season;
+      switch (month) {
+        case "იანვარი":
+        case "თებერვალი":
+        case "დეკემბერი":
+          season = "ზამთარი";
+          break;
+        case "მარტი":
+        case "აპრილი":
+        case "მაისი":
+          season = "გაზაფხული";
+          break;
+        case "ივნისი":
+        case "ივლისი":
+        case "აგვისტო":
+          season = "ზაფხული";
+          break;
+        case "სექტემბერი":
+        case "ოქტომბერი":
+        case "ნოემბერი":
+          season = "შემოდგომა";
+          break;
+        default:
+          season = "მიუთითე სწორი თვე (ქართულად)";
+      }
+      document.getElementById("season-output").innerText = season;
+    }
+    function checkAge() {
+      let age = parseInt(document.getElementById("ageInput").value);
+      let status = age >= 18 ? "Adult" : "Minor";
+      document.getElementById("age-output").innerText = status;
+    }
+    let now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth() + 1;
+    let date = now.getDate();
+    let day = now.getDay();
+    let hours = now.getHours();
+    document.getElementById("date-output").innerText =
+      `წელი: ${year}, თვე: ${month}, რიცხვი: ${date}, დღე: ${day}, საათი: ${hours}`;
+    function countdown(targetDate, elementId) {
+      let now = new Date();
+      let diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById(elementId).innerText = "დასრულებულია";
+        return;
+      }
+
+      let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      let minutes = Math.floor((diff / (1000 * 60)) % 60);
+      let seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById(elementId).innerText =
+        `${days} დღე ${hours} სთ ${minutes} წთ ${seconds} წმ`;
+    }
+
+    function startCountdowns() {
+      let year = new Date().getFullYear();
+
+      let newYear = new Date(`${year + 1}-01-01T00:00:00`);
+      let giorgoba = new Date(`${year}-11-23T00:00:00`);
+      let barbaroba = new Date(`${year}-12-17T00:00:00`);
+
+      setInterval(() => {
+        countdown(newYear, "newyear");
+        countdown(giorgoba, "giorgoba");
+        countdown(barbaroba, "barbaroba");
+      }, 1000);
+    }
+
+    startCountdowns();
+  </script>
+
+</body>
+</html>
