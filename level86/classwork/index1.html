@@ -1,0 +1,40 @@
+<div class="max-w-xl mx-auto mt-10">
+  <div class="relative overflow-hidden rounded-2xl">
+    <img id="sliderImage" class="w-full h-64 object-cover transition duration-500" src="https://picsum.photos/id/1015/600/400" alt="Slider Image">
+    
+    <button onclick="prevSlide()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">
+      &#10094;
+    </button>
+    <button onclick="nextSlide()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">
+      &#10095;
+    </button>
+  </div>
+</div>
+
+<script>
+  const images = [
+    "https://media.wired.com/photos/593261cab8eb31692072f129/3:2/w_2560%2Cc_limit/85120553.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOG5TM1EovYcHRS_Uoi7lufuMrQ3slzfmoLg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38Ns-CVTDefJzIOyf7qTAbQ0M09CRhV1oQA&s",
+    "https://images.ctfassets.net/cnu0m8re1exe/c175AfE5netP1i6bvd5tc/84a983d021f09be04717afa9374b4473/red_panda_lead.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill"
+  ];
+
+  let current = 0;
+  const sliderImage = document.getElementById("sliderImage");
+
+  function showSlide(index) {
+    if (index < 0) current = images.length - 1;
+    else if (index >= images.length) current = 0;
+    else current = index;
+
+    sliderImage.src = images[current];
+  }
+
+  function prevSlide() {
+    showSlide(current - 1);
+  }
+
+  function nextSlide() {
+    showSlide(current + 1);
+  }
+</script>

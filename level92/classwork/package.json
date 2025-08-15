@@ -1,0 +1,22 @@
+{
+  "name": "day-1",
+  "version": "1.0.0",
+  "type": "module",
+ "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luka353/homework1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luka353/homework1/issues"
+  },
+  "homepage": "https://github.com/luka353/homework1#readme",
+  "description": ""
+}

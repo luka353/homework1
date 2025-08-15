@@ -1,0 +1,29 @@
+import React from "react";
+
+export default function CakeGallery() {
+  return (
+    <div className="min-h-screen bg-pink-50 text-gray-800 p-8">
+      <h1 className="text-4xl font-bold text-pink-600 mb-6">ნამცხვრები</h1>
+      <p className="text-lg mb-6">
+        ტკბილი, არომატული და უგემრიელესი — ნამცხვრები ყველას უყვარს. ესაა იდეალური დესერტი ნებისმიერ დღესასწაულზე.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+          alt="ნამცხვარი"
+          className="rounded-lg shadow-md"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1601979031925-6b8daae13605"
+          alt="ნამცხვარი"
+          className="rounded-lg shadow-md"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1603022201830-9b8c897fa5d4"
+          alt="ნამცხვარი"
+          className="rounded-lg shadow-md"
+        />
+      </div>
+    </div>
+  );
+}
